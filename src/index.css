@@ -1,0 +1,43 @@
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+a{
+  color: inherit;
+  text-decoration: none;
+}
+li {
+  list-style: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+img {
+  width: 60px;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+.navbar ul{
+  display: flex;
+  gap: 20px;
+}
+.navbar button {
+  color: whitesmoke;
+  background-color: black;
+  border-radius: 20px;
+  padding: 15px;
+  cursor: pointer;
+}
+.routes {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
