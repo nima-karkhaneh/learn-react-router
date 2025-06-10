@@ -44,3 +44,17 @@ img {
   align-items: center;
   font-size: 1.5rem;
 }
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px 0;
+  gap: 10px;
+}
+
+.contact-buttons button {
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}

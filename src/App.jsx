@@ -6,6 +6,9 @@ import About from "./pages/About.jsx";
 import Products from "./pages/Products.jsx";
 import {createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from "react-router-dom";
 import RootLayout from "./layout/RootLayout.jsx";
+import ContactLayout from "./layout/ContactLayout.jsx";
+import ContactInfo from "./components/ContactInfo.jsx";
+import ContactForm from "./components/ContactForm.jsx";
 
 
 function App() {
@@ -15,9 +18,11 @@ function App() {
             <Route path="/" element={<RootLayout />}>
                 <Route index element={<Home />}></Route>
                 <Route path='about' element={<About />}></Route>
-                <Route path='contact' element={<Contact />}></Route>
+                <Route path='contact' element={<ContactLayout />}>
+                    <Route path="info" element={<ContactInfo />}></Route>
+                    <Route path="form" element={<ContactForm />}></Route>
+                </Route>
                 <Route path='products' element={<Products />}></Route>
-
             </Route>
         )
     )
