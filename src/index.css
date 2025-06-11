@@ -58,3 +58,11 @@ img {
   border-radius: 5px;
   cursor: pointer;
 }
+.home-redirect-btn {
+  padding: 10px;
+  border-radius: 5px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 20px;
+  cursor: pointer;
+}
