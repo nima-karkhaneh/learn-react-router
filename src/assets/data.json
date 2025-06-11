@@ -1,0 +1,22 @@
+{
+  "jobs": [
+    {
+      "id": 1,
+      "title": "Sr. React Developer",
+      "salary": 50000,
+      "location": "UK, London"
+    },
+    {
+      "id": 2,
+      "title": "Jnr Full Stack Developer",
+      "salary": 65000,
+      "location": "Sydney, Australia"
+    },
+    {
+      "id": 3,
+      "title": "Casual Sales Associate",
+      "salary": "Commission income based on number of sales - no fixed hourly rate",
+      "location": "Positions all around Australia"
+    }
+  ]
+}

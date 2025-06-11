@@ -42,7 +42,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
 }
 .contact-buttons {
   display: flex;
@@ -65,4 +65,24 @@ img {
   display: block;
   margin-top: 20px;
   cursor: pointer;
+}
+.jobs-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.jobs {
+  display: flex;
+  gap: 200px;
+  padding: 40px;
+  width: 100%;
+  margin-top: 40px;
+}
+.jobs a {
+  padding: 20px;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
