@@ -86,3 +86,12 @@ img {
   align-items: center;
   gap: 10px;
 }
+.job-details {
+  background-color: whitesmoke;
+  margin-top: 40px;
+  padding: 30px;
+  font-size: 1.2rem;
+}
+.not-found-err {
+  margin-top: 20px;
+}

@@ -8,7 +8,7 @@ const Jobs = () => {
         <div>
             <ul className="jobs">
                 {jobData.map((job) => {
-                    return <Link>
+                    return <Link to={job.id.toString()} key={job.id}>
                         <h4>{job.title}</h4>
                         <p>{job.location}</p>
                     </Link>
