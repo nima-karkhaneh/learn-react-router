@@ -13,6 +13,7 @@ import NotFound from "./components/NotFound.jsx";
 import JobsLayout from "./layout/JobsLayout.jsx";
 import Jobs, {JobLoader} from "./pages/Jobs.jsx";
 import JobDetails, {jobDetailsLoader} from "./components/JobDetails.jsx";
+import Error from "./components/Error.jsx";
 
 
 function App() {
@@ -27,13 +28,12 @@ function App() {
                     <Route path="form" element={<ContactForm />}></Route>
                 </Route>
                 <Route path='products' element={<Products />}></Route>
-                <Route path="jobs" element={<JobsLayout />}>
+                <Route path="jobs" element={<JobsLayout />} errorElement={<Error />}>
                     <Route index element={<Jobs />} loader={JobLoader} />
                     <Route
                         path=":id"
                         element={<JobDetails />}
                         loader={jobDetailsLoader}
-                        errorElement={<NotFound />}
                     >
                     </Route>
                 </Route>

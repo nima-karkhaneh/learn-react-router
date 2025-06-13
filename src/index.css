@@ -95,3 +95,13 @@ img {
 .not-found-err {
   margin-top: 20px;
 }
+.homepage-err-btn {
+  padding: 10px;
+  border-radius: 5px;
+  display: block;
+  margin: 30px auto;
+}
+.no-job-match-err h3,p {
+  text-align: center;
+  padding: 5px;
+}

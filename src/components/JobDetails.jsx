@@ -19,6 +19,9 @@ const JobDetails = () => {
 export const jobDetailsLoader = async ({ params }) => {
         const { id } = params;
         const res = await fetch (`http://localhost:5000/jobs/${id}`);
+        if (!res.ok) {
+            throw Error("The job you are looking for does not exists!")
+        }
         return res.json();
 }
 
